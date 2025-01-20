@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        body.page5 {
+            background-image: url(images/IMG-20250120-WA0002.jpg);
+            background-color: #ffffff;
+            /* Fondo de respaldo */
+            color: #00396e;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: auto 100%;
+            /* Ajusta la altura al 0% del contenedor */
+            background-attachment: fixed;
+            /* Imagen fija al hacer scroll */
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #00396e;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        /* Encabezado */
+        
+        h2 {
+            font-size: 2.5rem;
+            color: #00396e;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        /* Pregunta */
+        
+        #question {
+            font-size: 1.2rem;
+            margin: 0 auto 1rem;
+            padding: 0.5rem;
+            border-left: 4px solid #00396e;
+            background-color: #e8f4fb;
+            border-radius: 5px;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+        /* Entrada de texto */
+        
+        #inputWord {
+            width: 90%;
+            max-width: 500px;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        #inputWord:focus {
+            outline: none;
+            border-color: #f8f8f8;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+        /* Botón */
+        
+        #validateBtn {
+            background-color: #00396e;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        #validateBtn:hover {
+            background-color: #00396e;
+        }
+        /* Mensaje de error */
+        
+        #errorMsg {
+            color: #e74c3c;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+        /* Estilo del contenedor principal */
+        
+        .container {
+            text-align: center;
+            padding: 2rem;
+            /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /*background-color: #fff;*/
+            /*border-radius: 10px;
+            max-width: 800px;*/
+            margin: 2rem auto;
+        }
+    </style>
+
+</head>
+
+<body class="page5">
+    <div class="container">
+        <h1>Pregunta 5</h1>
+        <p id="question">papá de mi mamá es?</p>
+        <input type="text" id="inputWord" placeholder="Ingresa tu respuesta">
+        <button id="validateBtn">Validar</button>
+        <p id="errorMsg"></p>
+    </div>
+    <script src="js/script1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 3</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        body.page3 {
+            background-image: url(images/IMG-20250120-WA0006.jpg);
+            color: rgb(0, 0, 0);
+            background-size: contain;
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        /* Encabezado */
+        
+        h1 {
+            font-size: 2.5rem;
+            color: #0400ff;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        /* Pregunta */
+        
+        #question {
+            font-size: 1.2rem;
+            margin: 0 auto 1rem;
+            padding: 0.5rem;
+            border-left: 4px solid #fbff00;
+            background-color: #e8f4fb;
+            border-radius: 5px;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+        /* Entrada de texto */
+        
+        #inputWord {
+            width: 90%;
+            max-width: 500px;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        #inputWord:focus {
+            outline: none;
+            border-color: #f8f8f8;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+        /* Botón */
+        
+        #validateBtn {
+            background-color: #001aff;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        #validateBtn:hover {
+            background-color: #fbff00;
+        }
+        /* Mensaje de error */
+        
+        #errorMsg {
+            color: #e74c3c;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+        /* Estilo del contenedor principal */
+        
+        .container {
+            text-align: center;
+            padding: 2rem;
+            margin: 2rem auto;
+        }
+        /* Estilo para el iframe */
+        
+        iframe {
+            margin-top: 1rem;
+            border: none;
+            border-radius: 10px;
+            max-width: 100%;
+            width: 560px;
+            height: 315px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        }
+    </style>
+</head>
+
+<body class="page3">
+    <div class="container">
+        <h1>Pregunta 3</h1>
+        <p id="question">Muchas veces fui preso y muchas veces llore ___ vos</p>
+        <input type="text" id="inputWord" placeholder="Ingresa tu respuesta">
+        <button id="validateBtn">Validar</button>
+        <p id="errorMsg"></p>
+
+        <!-- Video de YouTube incrustado -->
+        <iframe src="https://www.youtube.com/embed/jTm2snBdV9A?si=KaSyNcCNCRTsdJwz" title="YouTube video player" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+        </iframe>
+    </div>
+    <script src="js/script1.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pregunta 1</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <style>
+        body.page1 {
+            background-image: url(images/Screenshot_20250119_022153_TikTok.jpg);
+            color: rgb(0, 0, 0);
+        }
+        
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Arial', sans-serif;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+        /* Encabezado */
+        
+        h2 {
+            font-size: 2.5rem;
+            color: #000000;
+            margin-bottom: 1rem;
+            text-align: center;
+        }
+        /* Pregunta */
+        
+        #question {
+            font-size: 1.2rem;
+            margin: 0 auto 1rem;
+            padding: 0.5rem;
+            border-left: 4px solid #000000;
+            background-color: #e8f4fb;
+            border-radius: 5px;
+            max-width: 600px;
+            line-height: 1.5;
+        }
+        /* Entrada de texto */
+        
+        #inputWord {
+            width: 90%;
+            max-width: 500px;
+            padding: 0.8rem;
+            font-size: 1rem;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            margin-bottom: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        
+        #inputWord:focus {
+            outline: none;
+            border-color: #f8f8f8;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+        }
+        /* Botón */
+        
+        #validateBtn {
+            background-color: #000000;
+            color: #fff;
+            padding: 0.8rem 1.5rem;
+            font-size: 1rem;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        
+        #validateBtn:hover {
+            background-color: #357ABD;
+        }
+        /* Mensaje de error */
+        
+        #errorMsg {
+            color: #e74c3c;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+        /* Estilo del contenedor principal */
+        
+        .container {
+            text-align: center;
+            padding: 2rem;
+            /*box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            /*background-color: #fff;*/
+            /*border-radius: 10px;
+            max-width: 800px;*/
+            margin: 2rem auto;
+        }
+    </style>
+
+</head>
+
+<body class="page1">
+    <div class="container">
+        <h1>Pregunta 1</h1>
+        <p id="question">La palabra que estás buscando se encuentra en el 7mo párrafo de la canción 'no me olvides' del pelado...</p>
+        <input type="text" id="inputWord" placeholder="Ingresa tu respuesta">
+        <button id="validateBtn">Validar</button>
+        <p id="errorMsg"></p>
+    </div>
+    <script src="js/script1.js"></script>
+</body>
+
+</html>
